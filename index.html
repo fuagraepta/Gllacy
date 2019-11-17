@@ -8,8 +8,7 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/svg/logo.svg" width="154"
-        height="64  " alt="Магазин мороженого Gllacy">
+        <img class="page-header__logo-image" src="img/svg/logo.svg" width="154" height="64" alt="Магазин мороженого Gllacy">
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
@@ -26,8 +25,10 @@
           <li class="site-list__item"><a href="delivery.html">Доставка и оплата</a></li>
           <li class="site-list__item"><a href="about.html">О Компании</a></li>
         </ul>
-        <label class="visually-hidden">Поиск</label>
-        <input class="main-nav__search" type="search">
+        <form class="main-nav__form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="main-search">Поиск</label>
+          <input class="main-nav__search" id="main-search" type="search">
+        </form>
         <ul class="main-nav__list user-list">
           <li class="user-list__item"><a class="user-list__login" href="login.html">Вход</a>
           </li>
@@ -57,19 +58,19 @@
               <p class="special-offer__discription">
                 Крем-брюле и пломбир с малиновым джемом
               </p>
-              <a class="button special-offer--button" href="#">Давайте оба!</a>
+              <a class="button button--special-offer" href="#">Давайте оба!</a>
             </li>
             <li class="special-offer__item slider__item">
               <p class="special-offer__discription">
                 Шоколадный пломбир и лимонный сорбет
               </P>
-              <a class="button special-offer--button" href="#">Давайте оба!</a>
+              <a class="button button--special-offer" href="#">Давайте оба!</a>
             </li>
             <li class="special-offer__item slider__item">
               <p class="special-offer__discription">
                 Пломбир с помадкой и клубничный щербет
               </p>
-              <a class="button special-offer--button" href="#">Давайте оба!</a>
+              <a class="button button--special-offer" href="#">Давайте оба!</a>
             </li>
           </ul>
         </div>
@@ -101,53 +102,53 @@
         <h2 class="visually-hidden">Популярные сорта</h2>
         <ul class="catalog__list">
           <li class="catalog__item--popular">
-            <img class="catalog__item-price" src="img/jpg/orange-ice-cream.jpg" width="267"
+            <img class="catalog__item-image" src="img/jpg/orange-ice-cream.jpg" width="267"
             height="267" alt="Сливочное с
             апельсиновым джемом">
-            <p class="catalog__item-prece">
+            <p class="catalog__item-price">
               <b class="catalog__item-number">310Р</b>
               <span class="catalog__item_weight">/кг</span>
             </p>
-            <p class="catalog__item-disctiption">
+            <p class="catalog__item-discription">
               Сливочное с апельсиновым джемом и цитрусовой  стружкой
             </p>
-            <a class="button catalog__item--button" href="#">Быстрый просмотр</a>
+            <a class="button button--catalog-item" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog__item--popular">
-            <img class="catalog__item-price" src="img/jpg/coffe-ice-cream.jpg" width="267"
+            <img class="catalog__item-image" src="img/jpg/coffe-ice-cream.jpg" width="267"
             height="267" alt="Сливочно-кофейное">
-            <p class="catalog__item-prece">
+            <p class="catalog__item-price">
               <b class="catalog__item-number">380Р</b>
               <span class="catalog__item_weight">/кг</span>
             </p>
-            <p class="catalog__item-disctiption">
+            <p class="catalog__item-discription">
               Сливочно-кофейное с кусочками шоколада
             </p>
-            <a class="button catalog__item--button" href="#">Быстрый просмотр</a>
+            <a class="button button--catalog-item" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog__item--popular">
-            <img class="catalog__item-price" src="img/jpg/strawberry-ice-cream.jpg" width="267"
+            <img class="catalog__item-image" src="img/jpg/strawberry-ice-cream.jpg" width="267"
             height="267" alt="Сливочно-клубничное">
-            <p class="catalog__item-prece">
+            <p class="catalog__item-price">
               <b class="catalog__item-number">355Р</b>
               <span class="catalog__item_weight">/кг</span>
             </p>
-            <p class="catalog__item-disctiption">
+            <p class="catalog__item-discription">
               Сливочно-клубничное с присыпкой из белого шоколада
             </p>
-            <a class="button catalog__item--button" href="#">Быстрый просмотр</a>
+            <a class="button button--catalog-item" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog__item--popular">
-            <img class="catalog__item-price" src="img/jpg/caramel-ice-cream.jpg" width="267"
+            <img class="catalog__item-image" src="img/jpg/caramel-ice-cream.jpg" width="267"
             height="267" alt="Сливочное крем-брюле">
-            <p class="catalog__item-prece">
+            <p class="catalog__item-price">
               <b class="catalog__item-number">415Р</b>
               <span class="catalog__item_weight">/кг</span>
             </p>
-            <p class="catalog__item-disctiption">
+            <p class="catalog__item-discription">
               Сливочное крем-брюле с карамельной подливкой
             </p>
-            <a class="button catalog__item--button" href="#">Быстрый просмотр</a>
+            <a class="button button--catalog-item" href="#">Быстрый просмотр</a>
           </li>
         </ul>
       </section>
@@ -204,8 +205,11 @@
           самого вкусного, что у нас происходит. Обещаем не спамить и не слать
           всякий ненужной ерунды. Честно =)
         </p>
-        <input type="email" value="" placeholder="Электронная почта">
-        <button class="button distribution--button" type="submit">Отправить</button>
+        <form class="distribution__form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="distribution-email">Подписка</label>
+          <input class="distribution__email" id="distribution-email" type="email" value="" placeholder="Электронная почта">
+          <button class="button button--distribution" type="submit">Отправить</button>
+        </form>
       </section>
 
       <section class="map">
@@ -219,7 +223,7 @@
             Для заказов по телефону:
             <span class="contacts__phone-mobile">8 812 450-25-25</span>
             (с 10 до 20 ежедневно)
-            <button class="button contacts__button">Форма обратной связи</button>
+            <button class="button button--contacts" type="button">Форма обратной связи</button>
           </p>
         </div>
       </section>
@@ -269,19 +273,41 @@
 
     <section class="modal modal-login">
       <h2 class="visually-hidden">Личный кабинет</h2>
-      <!-- Здесь будет форма -->
-    </section>
-
-    <section class="modal modal-search">
-      <h2 class="visually-hidden">Поиск</h2>
-      <!-- Здесь будет форма -->
+      <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="modal-login-wrapper">
+          <label class="visually-hidden" for="login-email">Электронная почта</label>
+          <input class="modal-login__email" id="login-email" type="email" name="email" placeholder="Электронная почта">
+        </p>
+        <p class="modal-login-wrapper">
+          <label class="visually-hidden" for="login-password">Пароль</label>
+          <input class="modal-login__password" id="login-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <button class="button button--modal-login" type="submit">Войти</button>
+        <p class="modal-login-wrapper">
+          <a class="modal-login__restore" href="#">Забыли пароль?</a>
+          <a class="modal-login__registration" href="#">Новая регистрация</a>
+        </p>
+      </form>
     </section>
 
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
       <b class="modal-feedback__slogan">Мы обязательно вам ответим</b>
-      <span class="modal-feedback__close">X</span>
-      <!-- Здесь будет форма -->
+      <button class="modal-feedback__close" type="button">Закрыть</button>
+      <form class="modal-feedback__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="modal-feedback__wrapper">
+          <label class="visually-hidden" for="feedback-name">Ваше имя</label>
+          <input class="modal-feedback__name" id="feedback-name" type="text" name="name" placeholder="Как вас зовут?">
+        </p>
+        <p class="modal-feedback__wrapper">
+          <label class="visually-hidden" for="feedback-email">Ваша почта для ответа</label>
+          <input class="modal-feedback__email" id="feedback-email" type="email" name="email" placeholder="Ваша почта для ответа?">
+        </p>
+        <p class="modal-feedback__wrapper">
+          <label class="visually-hidden" for="feedback-discription">Напишите что-нибудь</label>
+          <textarea class="modal-feedback__discription" id="feedback-discription" placeholder="Напишите что-нибудь..."></textarea>
+        </p>
+      </form>
     </section>
   </body>
 </html>
