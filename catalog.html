@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог магазина Gllacy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=latin,cyrillic">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
 
-  <body>
+  <body class="inner-page">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/svg/logo.svg" width="154"
@@ -29,7 +31,7 @@
         </ul>
         <form class="main-nav__form" action="https://echo.htmlacademy.ru" method="get">
           <label class="visually-hidden" for="main-search">Поиск</label>
-          <input class="main-nav__search" id="main-search" type="search">
+          <input class="main-nav__search" id="main-search" type="search" placeholder="Что ищем?">
         </form>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
@@ -129,7 +131,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button button--filtres" type="submit">Применить</button>
+          <button class="button button--filters" type="submit">Применить</button>
         </form>
       </section>
 
@@ -286,7 +288,7 @@
       </section>
 
       <ul class="page-catalog__pagination-list pagination-list">
-        <li class="pagination__item pagination__item--current">1</li>
+        <li class="pagination__item pagination__item--current"><a>1</a></li>
         <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
         <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
         <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
@@ -330,9 +332,8 @@
       </div>
 
       <div class="page-footer__copyright copyright">
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          html academy</a>
-          <b class="copyright__text">Сделано в HTML Academy &copy; 2019</b>
+        <img class="copyright__logo" src="img/svg/logo-htmlacademy-small.svg" width="108" height="39" alt="html academy">
+          <b class="copyright__text">Сделано в <a class="copyright__link" href="#">HTML Academy</a> &copy; 2019</b>
       </div>
     </footer>
 
@@ -374,7 +375,7 @@
           </td>
         </tr>
       </table>
-      <b class="modal-basket__total">Итого: 750 руб.</b>
+      <b class="modal-basket__total">Итого: <span class="modal-basket__total-number">750 руб.</span></b>
       <a class="button button--modal-basket" href="#">Оформить заказ</a>
     </section>
   </body>
