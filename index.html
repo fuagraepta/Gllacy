@@ -14,10 +14,10 @@
     <div class="site__wrapper">
       <div class="site__container">
         <header class="page-header">
-          <a class="page-header__logo">
-            <img class="page-header__logo-image" src="img/svg/logo.svg" width="154" height="64" alt="Магазин мороженого Gllacy">
-          </a>
           <nav class="main-nav">
+            <a class="page-header__logo">
+              <img class="page-header__logo-image" src="img/svg/logo.svg" width="154" height="64" alt="Магазин мороженого Gllacy">
+            </a>
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
                   <a href="#">Каталог</a>
@@ -32,20 +32,22 @@
               <li class="site-list__item"><a href="delivery.html">Доставка и оплата</a></li>
               <li class="site-list__item"><a href="about.html">О Компании</a></li>
             </ul>
-            <form class="main-nav__form" action="https://echo.htmlacademy.ru" method="get">
-              <label class="visually-hidden" for="main-search">Поиск</label>
-              <input class="main-nav__search visually-hidden" id="main-search" type="search" placeholder="Что ищем?">
-            </form>
-            <ul class="main-nav__list user-list">
-              <li class="user-list__item"><a class="user-list__login" href="login.html">Вход</a>
-              </li>
-            </ul>
-            <div class="main-nav__basket">
-              <a class="main-nav__basked-link main-nav__basked-link--empty" href="basket.html">Пусто</a>
+            <div class="main-nav__wrapper">
+              <form class="main-nav__form" action="https://echo.htmlacademy.ru" method="get">
+                <label class="visually-hidden" for="main-search">Поиск</label>
+                <input class="main-nav__search visually-hidden" id="main-search" type="search" placeholder="Что ищем?">
+              </form>
+              <ul class="main-nav__list user-list">
+                <li class="user-list__item"><a class="user-list__login" href="login.html">Вход</a>
+                </li>
+              </ul>
+              <div class="main-nav__basket">
+                <a class="main-nav__basked-link main-nav__basked-link--empty" href="basket.html">Пусто</a>
+              </div>
+              <p class="page-header__timetable">С 10 до 20, ежедневно</p>
+              <p class="page-header__phone-number">8 812 450-25-25</p>
             </div>
           </nav>
-          <p class="page-header__timetable">С 10 до 20, ежедневно</p>
-          <p class="page-header__phone-number">8 812 450-25-25</p>
         </header>
 
         <section class="slider">
@@ -105,7 +107,7 @@
           <section class="catalog catalog--popular">
             <h2 class="visually-hidden">Популярные сорта</h2>
             <ul class="catalog__list">
-              <li class="catalog__item--popular">
+              <li class="catalog__item catalog__item--popular">
                 <img class="catalog__item-image" src="img/jpg/orange-ice-cream.jpg" width="267"
                 height="267" alt="Сливочное с
                 апельсиновым джемом">
@@ -113,45 +115,45 @@
                   <b class="catalog__item-number">310Р</b>
                   <span class="catalog__item_weight">/кг</span>
                 </p>
-                <p class="catalog__item-discription">
+                <a class="catalog__item-discription">
                   Сливочное с апельсиновым джемом и цитрусовой  стружкой
-                </p>
+                </a>
                 <a class="button button--catalog-item" href="#">Быстрый просмотр</a>
               </li>
-              <li class="catalog__item--popular">
+              <li class="catalog__item catalog__item--popular">
                 <img class="catalog__item-image" src="img/jpg/coffe-ice-cream.jpg" width="267"
                 height="267" alt="Сливочно-кофейное">
                 <p class="catalog__item-price">
                   <b class="catalog__item-number">380Р</b>
                   <span class="catalog__item_weight">/кг</span>
                 </p>
-                <p class="catalog__item-discription">
+                <a class="catalog__item-discription">
                   Сливочно-кофейное с кусочками шоколада
-                </p>
+                </a>
                 <a class="button button--catalog-item" href="#">Быстрый просмотр</a>
               </li>
-              <li class="catalog__item--popular">
+              <li class="catalog__item catalog__item--popular">
                 <img class="catalog__item-image" src="img/jpg/strawberry-ice-cream.jpg" width="267"
                 height="267" alt="Сливочно-клубничное">
                 <p class="catalog__item-price">
                   <b class="catalog__item-number">355Р</b>
                   <span class="catalog__item_weight">/кг</span>
                 </p>
-                <p class="catalog__item-discription">
+                <a class="catalog__item-discription">
                   Сливочно-клубничное с присыпкой из белого шоколада
-                </p>
+                </a>
                 <a class="button button--catalog-item" href="#">Быстрый просмотр</a>
               </li>
-              <li class="catalog__item--popular">
+              <li class="catalog__item catalog__item--popular">
                 <img class="catalog__item-image" src="img/jpg/caramel-ice-cream.jpg" width="267"
                 height="267" alt="Сливочное крем-брюле">
                 <p class="catalog__item-price">
                   <b class="catalog__item-number">415Р</b>
                   <span class="catalog__item_weight">/кг</span>
                 </p>
-                <p class="catalog__item-discription">
+                <a class="catalog__item-discription">
                   Сливочное крем-брюле с карамельной подливкой
-                </p>
+                </a>
                 <a class="button button--catalog-item" href="#">Быстрый просмотр</a>
               </li>
             </ul>
@@ -195,26 +197,28 @@
             </ul>
           </section>
 
-          <aside class="blog">
-            <h2 class="blog__title">Новое в нашем блоге</h2>
-            <a class="blog__link" href="#">
-              10 способов сервировки фруктовых щербетов к столу
-            </a>
-          </aside>
+          <div class="colums">
+            <aside class="blog">
+              <h2 class="blog__title">Новое в нашем блоге</h2>
+              <a class="blog__link" href="#">
+                10 способов сервировки фруктовых щербетов к столу
+              </a>
+            </aside>
 
-          <section class="distribution">
-            <h2 class="visually-hidden">Наша рассылка</h2>
-            <p class="distribution__discription">
-              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
-              самого вкусного, что у нас происходит. Обещаем не спамить и не слать
-              всякий ненужной ерунды. Честно =)
-            </p>
-            <form class="distribution__form" action="https://echo.htmlacademy.ru" method="post">
-              <label class="visually-hidden" for="distribution-email">Подписка</label>
-              <input class="distribution__email" id="distribution-email" type="email" value="" placeholder="Электронная почта">
-              <button class="button button--distribution" type="submit">Отправить</button>
-            </form>
-          </section>
+            <section class="distribution">
+              <h2 class="visually-hidden">Наша рассылка</h2>
+              <p class="distribution__discription">
+                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
+                самого вкусного, что у нас происходит. Обещаем не спамить и не слать
+                всякий ненужной ерунды. Честно =)
+              </p>
+              <form class="distribution__form" action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="distribution-email">Подписка</label>
+                <input class="distribution__email" id="distribution-email" type="email" value="" placeholder="Электронная почта">
+                <button class="button button--distribution" type="submit">Отправить</button>
+              </form>
+            </section>
+          </div>
 
           <section class="map">
             <h2 class="visually-hidden">Контактная информация</h2>

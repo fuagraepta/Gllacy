@@ -9,7 +9,13 @@ body {
   color: #ffffff;
 }
 
-.site__wrapper {
+.site__container {
+  position: relative;
+  margin: 0 auto;
+  padding-left: 27px;
+  padding-right: 27px;
+  width: 1146px;
+
   background-color: #849d8f;
   background-image: url("../img/png/slider-item-01.png");
   background-position: top center;
@@ -48,17 +54,31 @@ a {
   background-color: #849d8f;
 }
 
+.page-header__logo {
+  margin-right: 24px;
+  width: 154px;
+  height: 64px;
+}
+
 .main-nav {
+  display: flex;
   font-size: 14px;
   line-height: 16px;
 }
 
 .site-list {
+  margin: 0px;
+  padding: 0px;
+  width: 378px;
+
   font-size: 16px;
   line-height: 18px;
 }
 
 .catalog-list {
+  margin: 0px;
+  padding: 0px;
+  width: 155px;
   font-weight: 400;
 
   background-color: #f8f7f4;
@@ -70,7 +90,14 @@ a {
   border-bottom: 1px solid #323232;
 }
 
+.main-nav__wrapper {
+  margin-left: auto;
+  width: 260px;
+}
+
 .user-list {
+  margin: 0px;
+  padding: 0px;
   font-weight: 500;
 }
 
@@ -179,10 +206,20 @@ a {
 }
 
 .slider {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
   text-align: center;
 }
 
+.slider__controls {
+  width: 80px;
+}
+
 .slider__list {
+  margin: 0px;
+  padding: 0px;
+  width: 670px;
   list-style: none;
 }
 
@@ -203,27 +240,31 @@ a {
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1);
 }
 
+.promo {
+  margin-bottom: 31px;
+}
 
 .promo__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
   list-style: none;
 }
 
-.promo__item--raspberry {
-
-  border-radius: 15px;
-
-  background-image: url("../img/jpg/raspberry.jpg");
+.promo__item {
+  width: 560px;
   background-position: 0 0;
   background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.promo__item--raspberry {
+  background-image: url("../img/jpg/raspberry.jpg");
 }
 
 .promo__item--chocolate {
-
-  border-radius: 15px;
-
   background-image: url("../img/jpg/chocolate.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
 }
 
 .promo__slogan {
@@ -242,8 +283,23 @@ a {
   line-height: 24px;
 }
 
+.catalog {
+  width: 1146px;
+}
+
+.catalog--popular {
+  margin-bottom:
+}
+
 .catalog__list {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
   list-style: none;
+}
+
+.catalog__item {
+  width: 293px;
 }
 
 .catalog__item-image {
@@ -264,7 +320,15 @@ a {
 
 .catalog__item-discription {
   font-weight: 500;
-  text-align: center
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.catalog__item-discription:hover,
+.catalog__item-discription:active,
+.catalog__item-discription:focus {
+  border-bottom: 1px solid rgba(255,  188, 158, 0.3);
+  color: #ffbc9e;
 }
 
 .button--catalog-item {
@@ -279,6 +343,11 @@ a {
 }
 
 .features {
+  margin-bottom: 40px;
+  padding-top: 28px;
+  padding-right: 33px;
+  padding-bottom: 27px;
+  padding-left: 20px;
   border-radius: 15px;
 
   color: #323232;
@@ -292,7 +361,16 @@ a {
 }
 
 .features__list {
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
   list-style: none;
+}
+
+.feature__item {
+  padding-left: 55px;
+  width: 485px;
 }
 
 .feature__item-discription {
@@ -300,7 +378,16 @@ a {
   text-align: left;
 }
 
+.colums {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
 .blog {
+  padding-top: 27px;
+  padding-left: 20px;
+  width: 540px;
   border-radius: 15px;
 
   color: #323232;
@@ -333,6 +420,7 @@ a {
 }
 
 .distribution {
+  width: 560px;
   border-radius: 15px;
 
   font-weight: 400;
@@ -365,12 +453,24 @@ a {
 }
 
 .map {
+  display: flex;
+  position: relative;
+  width: 1173px;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-right: 27px;
+  left: -27px;
   background-image: url("../img/png/map.png");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
+.map__contacts {
+  margin-left: auto;
+}
+
 .contacts {
+  width: 303px;
   border-radius: 15px;
   color: #323232;
   background-color: #fdfefe;
@@ -485,15 +585,24 @@ a {
   background-color: #ffffff;
 }
 
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 .social {
+  width: 267px;
   text-align: left;
 }
 
 .social__list {
+  margin: 0px
+  padding: 0px;
   list-style: none;
 }
 
 .information {
+  width: 560px;
   text-align: center;
 }
 
@@ -522,6 +631,7 @@ a {
 }
 
 .copyright {
+  width: 267px;
   font-size: 12px;
   line-height: 18px;
   text-align: right;
