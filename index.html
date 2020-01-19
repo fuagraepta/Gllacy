@@ -44,65 +44,72 @@
               <div class="main-nav__basket">
                 <a class="main-nav__basked-link main-nav__basked-link--empty" href="basket.html">Пусто</a>
               </div>
-              <p class="page-header__timetable">С 10 до 20, ежедневно</p>
-              <p class="page-header__phone-number">8 812 450-25-25</p>
             </div>
           </nav>
         </header>
 
-        <section class="slider">
-          <div class="slider__controls">
-            <label for="product-1">Первый</label>
-            <label for="product-2">Второй</label>
-            <label for="product-3">Третий</label>
-          </div>
-            <ul class="slider__list">
-              <li class="slider__item slide slider__item--active" id="slide1">
-                <h3 class="slide__title">
-                  Крем-брюле и пломбир с малиновым джемом
-                </h3>
-                <a class="button button--slide" href="#">Давайте оба!</a>
-              </li>
-              <li class="slider__item slide" id="slide2">
-                <h3 class="slide__title">
-                  Шоколадный пломбир и лимонный сорбет
-                </h3>
-                <a class="button button--slide" href="#">Давайте оба!</a>
-              </li>
-              <li class="slider__item slide" id="slide3">
-                <h3 class="slide__title">
-                  Пломбир с помадкой и клубничный щербет
-                </h3>
-                <a class="button button--slide" href="#">Давайте оба!</a>
-              </li>
-            </ul>
-        </section>
-
         <main class="page-main">
+          <div class="main-content__wrapper">
 
-          <h1 class="visually-hidden">Магазин мороженого Gllacy</h1>
+            <div class="chart__wrapper">
+              <div class="chart">
+                <p class="chart__timetable">С 10 до 20, ежедневно</p>
+                <p class="chart__phone-number">8 812 450-25-25</p>
+              </div>
+            </div>
 
-          <section class="promo">
-            <h2 class="visually-hidden">Акции</h2>
-            <ul class="promo__list">
-              <li class="promo__item promo__item--raspberry">
-                <b class="promo__slogan">Малинка даром!</b>
-                <p class="promo__discription">
-                  При покупке 2 кг любого фруктового  мороженого, добавим, в ваш
-                  заказ банку малинового варенья бесплатно.
-                </p>
-                <a class="button button--promo" href="#">Хочу варенье!</a>
-              </li>
-              <li class="promo__item promo__item--chocolate">
-                <b class="promo__slogan">Шоколадки даром!</b>
-                <p class="promo__discription">
-                  При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
-                  шоколадной присыпки совершенно бесплатно.
-                </p>
-                <a class="button button--promo" href="#">Хочу шоколадки!</a>
-              </li>
-            </ul>
-          </section>
+            <section class="slider">
+              <div class="slider__controls">
+                <label for="product-1">Первый</label>
+                <label for="product-2">Второй</label>
+                <label for="product-3">Третий</label>
+              </div>
+              <ul class="slider__list">
+                <li class="slider__item slide slider__item--active" id="slide1">
+                  <h3 class="slide__title">
+                    Крем-брюле и пломбир с малиновым джемом
+                  </h3>
+                  <a class="button button--slide" href="#">Давайте оба!</a>
+                </li>
+                <li class="slider__item slide" id="slide2">
+                  <h3 class="slide__title">
+                    Шоколадный пломбир и лимонный сорбет
+                  </h3>
+                  <a class="button button--slide" href="#">Давайте оба!</a>
+                </li>
+                <li class="slider__item slide" id="slide3">
+                  <h3 class="slide__title">
+                    Пломбир с помадкой и клубничный щербет
+                  </h3>
+                  <a class="button button--slide" href="#">Давайте оба!</a>
+                </li>
+              </ul>
+            </section>
+
+            <h1 class="visually-hidden">Магазин мороженого Gllacy</h1>
+
+            <section class="promo">
+              <h2 class="visually-hidden">Акции</h2>
+              <ul class="promo__list">
+                <li class="promo__item promo__item--raspberry">
+                  <b class="promo__slogan">Малинка даром!</b>
+                  <p class="promo__discription">
+                    При покупке 2 кг любого фруктового  мороженого, добавим, в ваш
+                    заказ банку малинового варенья бесплатно.
+                  </p>
+                  <a class="button button--promo" href="#">Хочу варенье!</a>
+                </li>
+                <li class="promo__item promo__item--chocolate">
+                  <b class="promo__slogan">Шоколадки даром!</b>
+                  <p class="promo__discription">
+                    При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
+                    шоколадной присыпки совершенно бесплатно.
+                  </p>
+                  <a class="button button--promo" href="#">Хочу шоколадки!</a>
+                </li>
+              </ul>
+            </section>
+          </div>
 
           <section class="catalog catalog--popular">
             <h2 class="visually-hidden">Популярные сорта</h2>
@@ -159,65 +166,67 @@
             </ul>
           </section>
 
-          <section class="features">
-            <h2 class="visually-hidden">Преимущества магазина Gllacy</h2>
-            <p class="features__discription">
-              Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого
-              собственного производства на развес
-            </p>
-            <ul class="features__list">
-              <li class="feature__item">
-                <p class="feature__item-discription feature__item-discription--technology">
-                  Все наше мороженое изготавливается на собственном производстве, с
-                  использованием современного оборудования и проверенных временем
-                  технологий.
-                </p>
-              </li>
-              <li class="feature__item">
-                <p class="feature__item-discription feature__item-discription--custom">
-                  Закупка ингредиентов производится только у проверенных фермерских
-                  хозяйств и компаний, с которыми нас связывает долговременное
-                  сотрудничество.
-                </p>
-              </li>
-              <li class="feature__item">
-                <p class="feature__item-discription feature__item-discription--materia">
-                  Для приготовления мороженого используются настоящие сливки и молоко
-                  высочайшего качества. Все дополнительные ингредиенты и добавки
-                  произведены из натурального, экологически чистого сырья.
-                </p>
-              </li>
-              <li class="feature__item">
-                <p class="feature__item-discription feature__item-discription--delivery">
-                  Доставка нашего мороженого до заказчиков осуществляется в специальном
-                  термопаке, который не дает мороженому растаять в пути и позволяет
-                  сохранить превосходный вкус.
-                </p>
-              </li>
-            </ul>
-          </section>
-
-          <div class="colums">
-            <aside class="blog">
-              <h2 class="blog__title">Новое в нашем блоге</h2>
-              <a class="blog__link" href="#">
-                10 способов сервировки фруктовых щербетов к столу
-              </a>
-            </aside>
-
-            <section class="distribution">
-              <h2 class="visually-hidden">Наша рассылка</h2>
-              <p class="distribution__discription">
-                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
-                самого вкусного, что у нас происходит. Обещаем не спамить и не слать
-                всякий ненужной ерунды. Честно =)
+          <div class="main-content__wrapper">
+            <section class="features">
+              <h2 class="visually-hidden">Преимущества магазина Gllacy</h2>
+              <p class="features__discription">
+                Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого
+                собственного производства на развес
               </p>
-              <form class="distribution__form" action="https://echo.htmlacademy.ru" method="post">
-                <label class="visually-hidden" for="distribution-email">Подписка</label>
-                <input class="distribution__email" id="distribution-email" type="email" value="" placeholder="Электронная почта">
-                <button class="button button--distribution" type="submit">Отправить</button>
-              </form>
+              <ul class="features__list">
+                <li class="feature__item">
+                  <p class="feature__item-discription feature__item-discription--technology">
+                    Все наше мороженое изготавливается на собственном производстве, с
+                    использованием современного оборудования и проверенных временем
+                    технологий.
+                  </p>
+                </li>
+                <li class="feature__item">
+                  <p class="feature__item-discription feature__item-discription--custom">
+                    Закупка ингредиентов производится только у проверенных фермерских
+                    хозяйств и компаний, с которыми нас связывает долговременное
+                    сотрудничество.
+                  </p>
+                </li>
+                <li class="feature__item">
+                  <p class="feature__item-discription feature__item-discription--materia">
+                    Для приготовления мороженого используются настоящие сливки и молоко
+                    высочайшего качества. Все дополнительные ингредиенты и добавки
+                    произведены из натурального, экологически чистого сырья.
+                  </p>
+                </li>
+                <li class="feature__item">
+                  <p class="feature__item-discription feature__item-discription--delivery">
+                    Доставка нашего мороженого до заказчиков осуществляется в специальном
+                    термопаке, который не дает мороженому растаять в пути и позволяет
+                    сохранить превосходный вкус.
+                  </p>
+                </li>
+              </ul>
             </section>
+
+            <div class="colums">
+              <aside class="blog">
+                <h2 class="blog__title">Новое в нашем блоге</h2>
+                <a class="blog__link" href="#">
+                  10 способов сервировки фруктовых щербетов к столу
+                </a>
+              </aside>
+
+              <section class="distribution">
+                <h2 class="visually-hidden">Наша рассылка</h2>
+                <p class="distribution__discription">
+                  Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
+                  самого вкусного, что у нас происходит. Обещаем не спамить и не слать
+                  всякий ненужной ерунды. Честно =)
+                </p>
+                <form class="distribution__form" action="https://echo.htmlacademy.ru" method="post">
+                  <label class="visually-hidden" for="distribution-email">Подписка</label>
+                  <input class="distribution__email" id="distribution-email" type="email" value="" placeholder="Электронная почта">
+                  <button class="button button--distribution" type="submit">Отправить</button>
+                </form>
+              </section>
+            </div>
           </div>
 
           <section class="map">
