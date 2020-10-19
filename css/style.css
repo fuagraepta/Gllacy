@@ -1997,9 +1997,9 @@ input[type="radio"].visually-hidden {
 }
 
 .modal {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex; */
   background-color: #f8f7f4;
   border-radius: 5px;
   -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -2017,6 +2017,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback {
+  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: fixed;
@@ -2032,6 +2033,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback__slogan {
+  display: block;
   margin-bottom: 20px;
   font-size: 24px;
   line-height: 28px;
@@ -2171,4 +2173,59 @@ input[type="radio"].visually-hidden {
   padding: 10px 25px;
   font-size: 18px;
   line-height: 24px;
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+.modal__show {
+  display: block;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
+}
+
+.modal__error {
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
